@@ -1,8 +1,10 @@
+ /* ######## COMMON ######## */
+
 body{
-    /* font-family: courier new; --> */
+    /* font-family: courier new; */
     background-color: white;
     border: 4px solid #000000;
-	}
+}
 
 header{
     position: relative;
@@ -10,7 +12,7 @@ header{
     margin-bottom: 20px;
     padding: 0;
     text-align: center;
-	}
+}
 
 #cubeBox {
 	position: absolute;
@@ -18,14 +20,13 @@ header{
     top: 0;
     width: 50px;
     margin: 5px;
-	}
+}
 
-.cube{
+#cube{
 	width: 100%;
-	height: auto;
 	border: 0;
     display: block;
-	}
+}
 
 #languageBox{
     font-size:115%;
@@ -35,75 +36,32 @@ header{
     margin: 5px;
     text-align: left;
     width: 60px;
-	}
-
-article{
-	margin: auto;
-	text-align: center;
-	}
+}
 
 #bigTitle{
     font-size:300%;
     margin: 0;
     padding: 0;
-	}
+}
 
-#storyTitle{
-    font-size:200%;
-    margin: 0;
-    padding: 0;
-	}
+article{
+	margin: auto;
+	text-align: center;
+}
+
+footer{
+    margin: 5px;
+    margin-top: 15px;
+}
+
+/* ######## HOME/STORY PAGE ######## */
 
 #navBox{
     margin-left: auto;
     margin-right: auto;
     max-width: 1300px;
     text-align: left;
-	}
-
-#previousBox{
-	position: absolute;
-    left: 0;
-    top: 50%;
-    text-align: left;
-    width: 10%;
-    margin-top: -5%;
-	}
-
-#nextBox{
-	position: absolute;
-    right: 0;
-    top: 50%;
-    text-align: right;
-    width: 10%;
-    margin-top: -5%;
-	}
-
-.arrow{
-	width: 100%;
-	height: auto;
-	border: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-	}
-
-#viewerBox{
-	position: relative;
-	width: 100%;
-	max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-	}
-
-#viewerImage{
-	width: 80%;
-	height: auto;
-	border: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-	}
+}
 
 .collectionTitle{
 	color: black;
@@ -111,14 +69,14 @@ article{
     text-align: left;
     margin-bottom:20px;
     margin-left:10px;
-	}
+}
 
 .collectionBox{
 	display: flex;
 	flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    }
+}
     
 .storyBox{
 	width: 250px;
@@ -128,68 +86,100 @@ article{
 	padding-right:2%;
 	text-align:center;
     margin-bottom:10px;
-	}
-
-.storyBoxS{
-	width: 150px;
-	margin-left:5px;
-	margin-right:5px;
-	padding-left:2%;
-	padding-right:2%;
-	text-align:center;
-    margin-bottom:10px;
-	}
+}
 	
 .navImage{
 	width: 100%;
     border: 4px solid #000000;
-	}
+}
 
 .navImageText{
 	font-size:115%;
 	margin: 5px;
-	}
+}
+
+/* ######## VIEWER PAGE ######## */
+
+#storyTitle{
+    font-size:200%;
+    margin: 0;
+    padding: 0;
+}
+
+#viewerBox{
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#viewerImage{
+	width: 80%;
+	height: auto;
+	border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #storyText{
 	font-size: 160%;
-	}
+}
 
-footer{
-    margin: 5px;
-    margin-top: 15px;
-	}
+#previousBox{
+	position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: left;
+    width: 10%;
+    margin-top: -5%;
+}
+
+#nextBox{
+	position: absolute;
+    right: 0;
+    top: 50%;
+    text-align: right;
+    width: 10%;
+    margin-top: -5%;
+}
+
+.arrow{
+	width: 100%;
+	height: auto;
+	border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ######## WEIRD STUFF ######## */
 	
-
 @font-face{
 	font-family: "Raphaelton"; src:url("fonts/Raphaëlton_A.otf");
-	}
-
-table, th, td{
-    table-layout: fixed;
-    border: 4px solid black;
-    border-collapse: collapse;
-	}
+}
 
 a:link {
     color: black;
     background-color: transparent; 
     text-decoration: none;
-	}
+}
 
 a:visited {
     color: black;
     background-color: transparent;
     text-decoration: none;
-	}
+}
 
 a:hover {
 	color: red;
     background-color: transparent;
     text-decoration: none;
-	}
+}
 
 a:active {
 	color: red;
     background-color: transparent;
     text-decoration: none;
-	}
+}
