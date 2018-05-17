@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Brickfucius | Rubei</title>
+		<link rel="stylesheet" href="brickfucius.css">
+		<script src="jquery-3.3.1.min.js"></script>
+	</head>
+	<body onload="smallWindow()" onresize="smallWindow()">
+		<header>
+			<div id="cubeBox">
+				<a href="brickfucius_home.html">
+					<img src="images/cube.svg" class="cube" alt="logo">
+				</a>
+			</div>
+			<div id="bigTitle">
+				<a href="https://www.ecosia.org/search?q=chinese&addon=safari">
+					積木古籍
+				</a>
+			</div>
+			<div id="bigTitle">
+				<a href="brickfucius_home.html">
+					BRICKFUCIUS
+				</a>
+			</div>
+			<div id="languageBox">
+				<a href="https://www.ecosia.org/search?q=chinese&addon=safari">中文</a>
+				<br>
+				<a href="brickfucius_rubei.html">English</a>
+			</div>
+		</header>
+		<article>
+			<div id="storyTitle">
+				Rubei visits Confucius
+			</div>
+			<div id="viewerBox">
+			<div id="previousBox">
+				<a href="https://www.ecosia.org/search?q=left&addon=safari">
+					<img src="images/previous.svg" class="arrow" alt="previous">
+				</a>
+			</div>
+			<img src="images/rubei3.png" id="viewerImage" alt="Rubein visits Confucius">
+			<div id="nextBox">
+				<a href="https://www.ecosia.org/search?q=right&addon=safari">
+					<img src="images/next.svg" class="arrow" alt="next">
+				</a>
+			</div>
+			</div>
+		</article>
+		<article>
+			<div id="storyText">
+				Rubei wished to visit Confucius.
+				<br>
+				孺悲欲見孔子。
+			</div>
+		</article>
+		<script>
+			function smallWindow() {
+				if ($(window).innerWidth()<650) {
+					document.getElementById("storyTitle").style.color = "red";
+					document.getElementById("storyTitle").style.fontSize = "170%";
+					document.getElementById("viewerImage").style.width = "100%";
+					document.getElementById("storyText").style.fontSize = "120%";
+				}
+				else{
+					document.getElementById("storyTitle").style.color = "black";
+					document.getElementById("storyTitle").style.fontSize = "200%";
+					document.getElementById("viewerImage").style.width = "80%";
+					document.getElementById("storyText").style.fontSize = "160%";
+				}
+    		}
+		</script>
+	</body>
+</html>
