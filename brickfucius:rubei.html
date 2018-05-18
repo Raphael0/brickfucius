@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="brickfucius.css">
 		<script src="jquery-3.3.1.min.js"></script>
 	</head>
-	<body onload="smallWindow()" onresize="smallWindow()">
+	<body>
 		<header>
 			<div id="cubeBox">
 				<a href="brickfucius_home.html">
@@ -54,21 +54,5 @@
 				孺悲欲見孔子。
 			</div>
 		</article>
-		<script>
-			function smallWindow() {
-				if ($(window).innerWidth()<650) {
-					document.getElementById("storyTitle").style.color = "red";
-					document.getElementById("storyTitle").style.fontSize = "170%";
-					document.getElementById("viewerImage").style.width = "100%";
-					document.getElementById("storyText").style.fontSize = "120%";
-				}
-				else{
-					document.getElementById("storyTitle").style.color = "black";
-					document.getElementById("storyTitle").style.fontSize = "200%";
-					document.getElementById("viewerImage").style.width = "80%";
-					document.getElementById("storyText").style.fontSize = "160%";
-				}
-    		}
-		</script>
 	</body>
 </html>

@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="brickfucius.css">
 		<script src="jquery-3.3.1.min.js"></script>
 	</head>
-	<body onload="smallWindow()" onresize="smallWindow()">
+	<body>
 		<header>
 			<div id="cubeBox">
 				<a href="https://www.ecosia.org/search?q=cube&addon=safari">
@@ -78,33 +78,6 @@
 	 			</div>
 			</div>
 		</article>
-		<script>
-			function smallWindow() {
-				if ($(window).innerWidth()<650) {
-					var items = document.getElementsByClassName("storyBox");
-  					for (var i=0; i < items.length; i++) {
-  						items[i].style.width = "200px";
-        			}
-        			var items = document.getElementsByClassName("collectionTitle");
-  					for (var i=0; i < items.length; i++) {
-  						items[i].style.color = "red";
-  						items[i].style.fontSize = "170%";
-  						items[i].style.color = "red";
-  					}
-				}
-				else{
-					var items = document.getElementsByClassName("storyBox");
-  					for (var i=0; i < items.length; i++) {
-  						items[i].style.width = "250px";
-        			}
-        			var items = document.getElementsByClassName("collectionTitle");
-  					for (var i=0; i < items.length; i++) {
-  						items[i].style.color = "black";
-  						items[i].style.fontSize = "200%";
-  					}
-				}
-    		}
-		</script>
 		<footer>Made by Raphaël</footer>
 	</body>
 </html>
