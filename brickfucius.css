@@ -1,5 +1,9 @@
  /* ######## COMMON ######## */
 
+:root {
+    --storyWidth: 25%; 
+}
+
 body{
     /* font-family: courier new; */
     background-color: white;
@@ -8,10 +12,10 @@ body{
 
 header{
     position: relative;
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 0;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
 #cubeBox {
@@ -25,7 +29,6 @@ header{
 #cube{
 	width: 100%;
 	border: 0;
-    display: block;
 }
 
 #languageBox{
@@ -57,47 +60,53 @@ footer{
 /* ######## HOME/STORY PAGE ######## */
 
 #navBox{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1210px;
-    text-align: left;
 }
 
 .collectionTitle{
+	text-align: center;
 	color: black;
-	font-size:200%;
-    text-align: left;
-    margin-bottom:20px;
-    margin-left: calc(10px + 2%);
+	font-size: 200%;
+	margin-right: 4px;
+	margin-left: 4px;
+    margin-bottom: 20px;
 }
 
 .collectionBox{
 	display: flex;
 	flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    margin-bottom: 20px;
 }
-    
+
+.collectionBox2{
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.whiteBox{
+	width: 10%;
+}
+
 .storyBox{
-	width: 250px;
-	margin-left: calc(10px + 2%);
-	margin-right: calc(10px);
+	width: 33.3%;
 	text-align:center;
-    margin-bottom:10px;
+    padding-bottom:10px;
 }
 	
 .navImage{
-	width: 100%;
+	width: 93%;
+	max-width: 350px;
     border: 4px solid #000000;
 }
 
 .navImage:hover{
-	width: 100%;
     border: 4px solid red;
 }
 
 .navImageText{
-	font-size:115%;
+	font-size:130%;
 	margin: 5px;
 }
 
@@ -115,19 +124,6 @@ footer{
 	max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-}
-
-#viewerImage{
-	width: 80%;
-	height: auto;
-	border: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#storyText{
-	font-size: 160%;
 }
 
 #previousBox{
@@ -157,18 +153,79 @@ footer{
     margin-right: auto;
 }
 
+#viewerImage{
+	width: 80%;
+    display: block;
+	border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#storyText{
+	font-size: 160%;
+}
+
 /* ######## RESPONSIVE DESIGN ######## */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 55cm) {
+	.navImage{
+		max-width: 280px;
+	}
+
+@media screen and (max-width: 20cm) {
+	.storyBox{
+		width: 50%;
+	}
+    .navImage{
+    	max-width: 260px;
+	}
 	.collectionTitle{
-		font-size: 160%;
 		color: red;
 	}
-	.storyBox{
-		width: 200px;
+	.collectionBox2{
+		width: 90%;
+	}
+	.whiteBox{
+		width: 5%;
 	}
     .navImageText{
-    	font-size: 80%;
+    	font-size: 115%;
+    }
+    footer{
+    	font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 11cm) {
+	#cubeBox{
+		width: 40px;
+	}
+	#languageBox{
+    	width: 48px;
+		font-size: 92%;
+	}
+	#bigTitle{
+		font-size: 200%;
+	}
+	.collectionTitle{
+		font-size: 140%;
+		color: blue;
+	}
+	.collectionBox2{
+		width: 100%;
+	}
+	.whiteBox{
+		width: 0;
+	}
+	.storyBox{
+		width: 100%
+	}
+    .navImage{
+    	max-width: 160px;
+	}
+    .navImageText{
+    	font-size: 100%;
     }
     #storyTitle{
     	color: red;
@@ -179,6 +236,9 @@ footer{
     }
     #storyText{
     	font-size: 120%;
+    }
+    footer{
+    	font-size: 80%;
     }
 }
 
