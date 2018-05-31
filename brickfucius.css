@@ -1,13 +1,20 @@
  /* ######## COMMON ######## */
 
-:root {
-    --storyWidth: 25%; 
-}
-
 body{
     /* font-family: courier new; */
     background-color: white;
+    margin: 0;
+}
+
+#siteBox{
+	max-width: 1440px;
+    margin: 0 auto;
+}
+
+#siteBox2{
+    max-width: 1416px;
     border: 4px solid #000000;
+    margin: 8px;
 }
 
 header{
@@ -15,7 +22,7 @@ header{
     text-align: center;
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #cubeBox {
@@ -32,7 +39,7 @@ header{
 }
 
 #languageBox{
-    font-size:115%;
+    font-size: 115%;
 	position: absolute;
     right: 0;
     top: 0;
@@ -42,7 +49,15 @@ header{
 }
 
 #bigTitle{
-    font-size:300%;
+    font-size: 300%;
+    margin: 0;
+    padding: 0;
+    margin-top: 3px;
+}
+
+#smallTitle{
+    font-size: 150%;
+    color: rgb(70,70,70);
     margin: 0;
     padding: 0;
 }
@@ -54,7 +69,7 @@ article{
 
 footer{
     margin: 5px;
-    margin-top: 15px;
+    margin-bottom: 2px;
 }
 
 /* ######## HOME/STORY PAGE ######## */
@@ -97,7 +112,7 @@ footer{
 	
 .navImage{
 	width: 93%;
-	max-width: 350px;
+	max-width: 280px;
     border: 4px solid #000000;
 }
 
@@ -115,6 +130,7 @@ footer{
 #storyTitle{
     font-size:200%;
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
 }
 
@@ -167,13 +183,31 @@ footer{
 }
 
 /* ######## RESPONSIVE DESIGN ######## */
-
-@media screen and (max-width: 55cm) {
+/*
+@media screen and (min-width: 24cm) {
 	.navImage{
-		max-width: 280px;
 	}
+	.collectionBox2{
+		max-width: 1000px;
+	}
+	.whiteBox{
+		width: 0;
+	}*/
 
-@media screen and (max-width: 20cm) {
+@media screen and (max-width: 720px) {
+	#siteBox2{
+		margin: 7px;
+	}
+	header{
+    	margin-bottom: 25px;
+	}
+	#bigTitle{
+		font-size: 270%;
+    	margin-top: 1px;
+	}
+	#smallTitle{
+		font-size: 130%;
+	}
 	.storyBox{
 		width: 50%;
 	}
@@ -181,6 +215,7 @@ footer{
     	max-width: 260px;
 	}
 	.collectionTitle{
+		font-size: 170%;
 		color: red;
 	}
 	.collectionBox2{
@@ -192,12 +227,23 @@ footer{
     .navImageText{
     	font-size: 115%;
     }
+    #storyTitle{
+    	color: red;
+    	font-size: 170%;
+    	margin-bottom: 15px;
+    }
     footer{
     	font-size: 90%;
     }
 }
 
-@media screen and (max-width: 11cm) {
+@media screen and (max-width: 420px) {
+	#siteBox2{
+		margin: 6px;
+	}
+	header{
+    	margin-bottom: 20px;
+	}
 	#cubeBox{
 		width: 40px;
 	}
@@ -207,6 +253,10 @@ footer{
 	}
 	#bigTitle{
 		font-size: 200%;
+    	margin-top: 0;
+	}
+	#smallTitle{
+		font-size: 100%;
 	}
 	.collectionTitle{
 		font-size: 140%;
@@ -228,8 +278,9 @@ footer{
     	font-size: 100%;
     }
     #storyTitle{
-    	color: red;
-    	font-size: 170%;
+    	color: blue;
+    	font-size: 140%;
+    	margin-bottom: 10px;
     }
     #viewerImage{
     	width: 100%;
